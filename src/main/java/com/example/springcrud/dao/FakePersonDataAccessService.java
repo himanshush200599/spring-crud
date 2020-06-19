@@ -22,4 +22,10 @@ public class FakePersonDataAccessService implements PersonDao {
     public List<Person> selectAllPeople() {
         return DB;
     }
+
+    @Override
+    public int deleteAllPeople() {
+        DB = new ArrayList<>();
+        return 1;
+    }
 }

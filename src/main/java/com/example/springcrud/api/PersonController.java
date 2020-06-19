@@ -25,4 +25,8 @@ public class PersonController {
     public List<Person> getAllPeople(){
         return personService.getAllPeople();
     }
+    @DeleteMapping
+    public int deleteAllPeople(){
+        return personService.deleteAllPeople();
+    }
 }
